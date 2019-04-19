@@ -12,7 +12,16 @@ npm i @babel/core @babel/node @babel/preset-env nodemon -D
 
 ```js
 {
-  "presets": ["@babel/preset-env"]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": true
+        }
+      }
+    ]
+  ]
 }
 ```
 
